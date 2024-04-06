@@ -23,7 +23,7 @@
      cd Prototipo_1
      ```
 
-   - Encuentra el archivo `inicio.html` y ábrelo en tu navegador. 
+   - Encuentra el archivo `index.html` y ábrelo en tu navegador. 
 
    - El juego debería cargarse en tu navegador y estar listo para jugar.
 

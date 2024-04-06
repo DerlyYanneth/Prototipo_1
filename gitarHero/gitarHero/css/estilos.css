@@ -1,0 +1,358 @@
+/* Estilo para el rectángulo */
+.rectangulo {
+    width: 20vw;
+    /* Ancho del rectángulo */
+    height: 100vh;
+    /* Altura del rectángulo */
+    background-image: url('imagenes/Fondoo2.jpg');
+    /* Imagen de fondo */
+    background-size: cover;
+    /* Ajusta la imagen para cubrir todo el área */
+    background-position: center;
+    /* Centra la imagen */
+    display: flex;
+    /* Usa flexbox para los círculos */
+    justify-content: center;
+    /* Centra los círculos horizontalmente */
+    align-items: center;
+    /* Centra los círculos verticalmente */
+}
+
+
+
+.Fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('imagenes/Fondool.jpg');
+    /* Ruta de la imagen de fondo */
+    background-size: cover;
+    /* Ajusta la imagen para cubrir todo el contenedor */
+    z-index: -1;
+    /* Asegura que el fondo esté detrás de todo el contenido */
+}
+
+/* Estilo para el contenido */
+.content {
+    position: relative;
+    z-index: 1;
+    /* Asegura que el contenido esté delante del fondo */
+    color: rgb(0, 0, 0);
+    /* Color del texto */
+    padding: 20px;
+}
+
+.boton {
+    padding: 10px 80px;
+    /* Espacio interior del botón */
+    background-color: white;
+    /* Color de fondo */
+    font-family:'Vivaldi', cursive;
+    /* Cambia el tipo de letra */
+    color: black;
+    /* Color del texto */
+    border: 2px solid rgb(133, 220, 241);
+    border-radius: 5px;
+    /* Borde redondeado */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+    font-size: 30px;
+    /* Tamaño de la fuente */
+    position: absolute;
+    /* Posicionamiento absoluto */
+    top: 50vh;
+    left: 40vw;
+}
+
+.boton-Menu {
+    padding: 10px 20px;
+    /* Espacio interior del botón */
+    position: fixed;
+    background-color: white;
+    /* Color de fondo */
+    font-family: 'Vivaldi', cursive;
+    /* Cambia el tipo de letra */
+    color: black;
+    /* Color del texto */
+    border: 2px solid black;
+    border-radius: 5px;
+    /* Borde redondeado */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+    font-size: 30px;
+    /* Tamaño de la fuente */
+    position: absolute;
+    /* Posicionamiento absoluto */
+    top: 33vh;
+    left: 5.5vw;
+
+}
+
+/* Estilo para el botón cuando se pasa el cursor sobre él */
+.boton:hover {
+    background-color: rgb(3, 248, 215);
+    /* Cambia el color de fondo al pasar el cursor */
+}
+
+.boton-Menu:hover {
+    background-color: rgb(3, 248, 215);
+    /* Cambia el color de fondo al pasar el cursor */
+}
+
+.boton-continuar:hover {
+    background-color: rgb(3, 248, 215);
+    /* Cambia el color de fondo al pasar el cursor */
+}
+
+
+h1 {
+    font-family: 'Vivaldi', cursive;
+    color: black;
+    font-weight: bold;
+    font-size: 80px;
+    /* Tamaño de letra más grande */
+    text-shadow:
+        3px 3px 0 #FFF,
+        -3px -3px 0 #FFF,
+        3px -3px 0 #FFF,
+        -3px 3px 0 #FFF;
+    /* Borde blanco */
+}
+
+h3 {
+    font-family: 'Vivaldi', cursive;
+    color: black;
+    top: 10vh;
+    font-weight: bold;
+    font-size: 50px;
+    /* Tamaño de letra más grande */
+    text-shadow:
+        3px 3px 0 #FFF,
+        -3px -3px 0 #FFF,
+        3px -3px 0 #FFF,
+        -3px 3px 0 #FFF;
+    /* Borde blanco */
+}
+
+h3 {
+    font-family: 'Vivaldi', cursive;
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+    /* Tamaño de letra más grande */
+    text-shadow:
+        3px 3px 0 #FFF,
+        -3px -3px 0 #FFF,
+        3px -3px 0 #FFF,
+        -3px 3px 0 #FFF;
+    /* Borde blanco */
+}
+
+.boton-pausa {
+    position: fixed;
+    top: 1vh;
+    /* 2% del alto de la ventana */
+    right: 2vw;
+    /* 2% del ancho de la ventana */
+    background: none;
+    /* Elimina el fondo */
+    border: none;
+    /* Elimina el borde */
+    padding: 0;
+    /* Elimina el relleno */
+}
+
+#menu-pausa {
+    position: fixed;
+    /* Posicionamiento fijo */
+    top: 50%;
+    /* Centrado verticalmente */
+    left: 50%;
+    /* Centrado horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Centrado exacto */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Color de fondo con transparencia */
+    padding: 150px;
+    /* Espaciado interno */
+    border-radius: 15px;    
+    /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Sombra */
+    z-index: 9999;
+    /* Asegura que esté sobre otros elementos */
+    display: none;
+    /* Inicialmente oculto */
+}
+
+#puntajeX {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 9999;
+}
+
+#menu-pausa h1 {
+    margin-top: -150px;
+    /* Mueve el texto hacia arriba */
+}
+
+#puntajeX h1 {
+    margin-top: -70px;
+    /* Mueve el texto hacia arriba */
+}
+
+.boton-continuar {
+    padding: 10px 20px;
+    /* Espacio interior del botón */
+    position: fixed;
+    background-color: white;
+    /* Color de fondo */
+    font-family: 'Vivaldi', cursive;
+    /* Cambia el tipo de letra */
+    color: black;
+    /* Color del texto */
+    border: 2px solid black;
+    border-radius: 5px;
+    /* Borde redondeado */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+    font-size: 30px;
+    /* Tamaño de la fuente */
+    position: absolute;
+    /* Posicionamiento absoluto */
+    top: 20vh;
+    left: 8vw;
+
+}
+
+.circulo1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    top: 0px;
+    left: 0vw;
+    background-color: rgb(247, 8, 8);
+    z-index: 9999;
+}
+
+.circulo2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    top: 0px;
+    left: 6vw;
+    background-color: rgb(26, 26, 228);
+    z-index: 9999;
+}
+
+.circulo3 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    top: 0px;
+    left: 12vw;
+    background-color: rgb(238, 238, 16);
+    z-index: 9999;
+}
+
+.circulo4 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    top: 0px;
+    left: 18vw;
+    background-color: rgb(5, 194, 5);
+    z-index: 9999;
+}
+
+.punto1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(247, 8, 8);
+    margin: 10px;
+    bottom: 5vh;
+    left: -0.5vw;
+    background-color: #FFF;
+}
+
+.punto2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(26, 26, 228);
+    margin: 10px;
+    bottom: 5vh;
+    left: 5.5vw;
+    background-color: #FFF;
+}
+
+.punto3 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(238, 238, 16);
+    margin: 10px;
+    bottom: 5vh;
+    left: 11.5vw;
+    background-color: #FFF;
+}
+
+.punto4 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(5, 194, 5);
+    margin: 10px;
+    bottom: 5vh;
+    left: 17.5vw;
+    background-color: #FFF;
+}
+
+.contenedor {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Ajusta según sea necesario */
+}
+
+.cuadrado {
+    position: absolute;
+    width: 400px;
+    /* Ancho del cuadrado */
+    height: 300px;
+    /* Alto del cuadrado */
+    background-color: rgba(0, 0, 0, 0.563);
+    /* Color de fondo */
+    top: 30vh;
+    left: 5vw;
+    z-index: 9999;
+}

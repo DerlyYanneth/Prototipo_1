@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitarHero </title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="css/imagenes/icono.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lakki+Reddy&display=swap" rel="stylesheet">
+    <script src="javascript/scripts.js"></script>
+</head>
+
+<body>
+
+    <div id="menu" class="Fondo">
+        <center>
+            <div class="content">
+                <h1> GitarHero </h1>
+                <button onclick="iniciar()" class="boton">Iniciar juego</button>
+                
+            </div>
+        </center>
+    </div>
+
+    <div id="principal" class="Fondo" style="display: none;">
+        <center>
+            <div class="content">
+                <h1> GitarHero </h1>
+                <button onclick="iniciar()" class="boton">Iniciar juego</button>
+            </div>
+        </center>
+    </div>
+
+    <div id="gitar" style="display: none;" class="fondo">
+        <audio id="audio" autoplay> <!-- Elemento de audio para la música de fondo -->
+            <source src="musica/Believer.mp3" type="audio/mp3"> <!-- Fuente del archivo de audio -->
+            <source src="musica/Believer.mp3" type="audio/mp3">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+
+        <audio id="coin">
+            <source src="musica/gamerCoin.mp3" type="audio/mp3">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        
+        <div class="cuadrado"> <!-- Div para mostrar el puntaje -->
+            <center>
+                <h3>score<br><span id="puntajeDisplay">0</span> Pts</h3>
+            </center>
+        </div>
+
+        <button onclick="mostrarMenu()" class="boton-pausa"> <!-- Botón para mostrar el menú de pausa -->
+            <img src="css/imagenes/pausa.png" alt="Descripción de la imagen">
+        </button>
+
+        <div id="menu-pausa" style="display: none;">
+            <h1>Pausa</h1>
+            <div>
+                <button onclick="ocultarMenu()" class="boton-continuar">Continuar</button>
+                <button onclick="volverMenuPrincipal()" class="boton-Menu"> Menú Principal</button>
+            </div>
+            
+        </div>
+
+        <div id="puntajeX" style="display: none;">
+            <h1>Tu Puntaje</h1>
+            <h3><span id= "variable"></span>Puntos</h3>
+            <button onclick="volverMenuPrincipal()" class="boton-Menu"> Menú Principal</button>
+        </div>
+
+        <center> <!-- Centro de alineación -->
+            <div class="rectangulo content"> <!-- Div para el juego -->
+                <div class="circulo1"></div>
+                <div class="circulo2"></div>
+                <div class="circulo3"></div>
+                <div class="circulo4"></div>
+                <div class="contenedor"> <!-- Contenedor de puntos -->
+                    <div class="punto1"></div>
+                    <div class="punto2"></div>
+                    <div class="punto3"></div>
+                    <div class="punto4"></div>
+                </div>
+
+            </div>
+        </center>
+    </div>
+
+</body>
+
+</html>

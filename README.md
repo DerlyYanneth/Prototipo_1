@@ -10,7 +10,7 @@
    - Ejecuta el siguiente comando para clonar el repositorio:
 
      ```
-     git clone https://github.com/DerlyYanneth/Prototipo1GH
+     git clone https://github.com/DerlyYanneth/Prototipo_1
      ```
 
    - Esto descargará una copia local del repositorio en tu máquina.
@@ -20,7 +20,7 @@
    - Ve al directorio del repositorio clonado:
 
      ```
-     cd Prototipo1GH
+     cd Prototipo_1
      ```
 
    - Encuentra el archivo `inicio.html` y ábrelo en tu navegador. 
